@@ -1,0 +1,8 @@
+/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/obj/Debug/net8.0/MovieShopMVC.csproj.AssemblyReference.cache
+/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/obj/Debug/net8.0/MovieShopMVC.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/obj/Debug/net8.0/MovieShopMVC.AssemblyInfoInputs.cache
+/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/obj/Debug/net8.0/MovieShopMVC.AssemblyInfo.cs
+/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/obj/Debug/net8.0/MovieShopMVC.csproj.CoreCompileInputs.cache
+/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/obj/Debug/net8.0/MovieShopMVC.MvcApplicationPartsAssemblyInfo.cache
+/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/obj/Debug/net8.0/MovieShopMVC.RazorAssemblyInfo.cache
+/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/obj/Debug/net8.0/MovieShopMVC.RazorAssemblyInfo.cs

@@ -1,0 +1,14 @@
+@using ApplicationCore.Models
+@model IEnumerable<ApplicationCore.Models.MovieCardModel>
+
+<h2 >Top Rated Movies</h2>
+
+
+        @foreach (var movie in Model)
+        {
+            <div >
+                <h5>@movie.Title</h5>
+                <img src="@movie.PosterUrl" alt="@movie.Title" />
+            </div>
+        }
+

@@ -1,0 +1,11 @@
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/bin/Debug/net9.0/ApplicationCore.deps.json
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/bin/Debug/net9.0/ApplicationCore.dll
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/bin/Debug/net9.0/ApplicationCore.pdb
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/obj/Debug/net9.0/ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/obj/Debug/net9.0/ApplicationCore.AssemblyInfoInputs.cache
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/obj/Debug/net9.0/ApplicationCore.AssemblyInfo.cs
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/obj/Debug/net9.0/ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/obj/Debug/net9.0/ApplicationCore.dll
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/obj/Debug/net9.0/refint/ApplicationCore.dll
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/obj/Debug/net9.0/ApplicationCore.pdb
+/Users/aniketmajety/RiderProjects/MovieShop/ApplicationCore/obj/Debug/net9.0/ref/ApplicationCore.dll
