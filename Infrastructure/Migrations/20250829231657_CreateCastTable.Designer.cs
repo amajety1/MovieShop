@@ -4,6 +4,7 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(MovieShopDbContext))]
-    partial class MovieShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250829231657_CreateCastTable")]
+    partial class CreateCastTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -136,36 +139,6 @@ namespace Infrastructure.Migrations
                     b.ToTable("Movies", (string)null);
                 });
 
-            modelBuilder.Entity("ApplicationCore.Entities.MovieCast", b =>
-                {
-                    b.Property<int>("MovieId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CastId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CastId1")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Character")
-                        .IsRequired()
-                        .HasMaxLength(450)
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int?>("MovieId1")
-                        .HasColumnType("int");
-
-                    b.HasKey("MovieId", "CastId");
-
-                    b.HasIndex("CastId");
-
-                    b.HasIndex("CastId1");
-
-                    b.HasIndex("MovieId1");
-
-                    b.ToTable("MovieCasts", (string)null);
-                });
-
             modelBuilder.Entity("ApplicationCore.Entities.MovieGenre", b =>
                 {
                     b.Property<int>("MovieId")
@@ -208,33 +181,6 @@ namespace Infrastructure.Migrations
                     b.ToTable("Trailers");
                 });
 
-            modelBuilder.Entity("ApplicationCore.Entities.MovieCast", b =>
-                {
-                    b.HasOne("ApplicationCore.Entities.Cast", "Cast")
-                        .WithMany()
-                        .HasForeignKey("CastId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ApplicationCore.Entities.Cast", null)
-                        .WithMany("MovieCasts")
-                        .HasForeignKey("CastId1");
-
-                    b.HasOne("ApplicationCore.Entities.Movie", "Movie")
-                        .WithMany()
-                        .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ApplicationCore.Entities.Movie", null)
-                        .WithMany("MovieCasts")
-                        .HasForeignKey("MovieId1");
-
-                    b.Navigation("Cast");
-
-                    b.Navigation("Movie");
-                });
-
             modelBuilder.Entity("ApplicationCore.Entities.MovieGenre", b =>
                 {
                     b.HasOne("ApplicationCore.Entities.Genre", "Genre")
@@ -265,11 +211,6 @@ namespace Infrastructure.Migrations
                     b.Navigation("Movie");
                 });
 
-            modelBuilder.Entity("ApplicationCore.Entities.Cast", b =>
-                {
-                    b.Navigation("MovieCasts");
-                });
-
             modelBuilder.Entity("ApplicationCore.Entities.Genre", b =>
                 {
                     b.Navigation("MovieGenres");
@@ -277,8 +218,6 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("ApplicationCore.Entities.Movie", b =>
                 {
-                    b.Navigation("MovieCasts");
-
                     b.Navigation("MovieGenres");
 
                     b.Navigation("Trailers");

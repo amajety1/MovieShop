@@ -23,4 +23,5 @@ public class Movie
 
     public ICollection<Trailer> Trailers { get; set; }
     public ICollection<MovieGenre> MovieGenres { get; set; }
+    public ICollection<MovieCast> MovieCasts { get; set; }
 }
