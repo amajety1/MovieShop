@@ -18,8 +18,8 @@ public class Movie
     public decimal? Price { get; set; }
     public DateTime? CreatedDate { get; set; }
     public DateTime? UpdatedDate { get; set; }
-    public string UpdatedBy { get; set; }
-    public string CreatedBy { get; set; }
+    public string? UpdatedBy { get; set; }
+    public string? CreatedBy { get; set; }
 
     public ICollection<Trailer> Trailers { get; set; }
     public ICollection<MovieGenre> MovieGenres { get; set; }
