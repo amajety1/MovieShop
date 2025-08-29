@@ -13,3 +13,4 @@
 /Users/aniketmajety/RiderProjects/MovieShop/Infrastructure/obj/Debug/net9.0/refint/Infrastructure.dll
 /Users/aniketmajety/RiderProjects/MovieShop/Infrastructure/obj/Debug/net9.0/Infrastructure.pdb
 /Users/aniketmajety/RiderProjects/MovieShop/Infrastructure/obj/Debug/net9.0/ref/Infrastructure.dll
+/Users/aniketmajety/RiderProjects/MovieShop/Infrastructure/obj/Debug/net9.0/Infrastructure.sourcelink.json
