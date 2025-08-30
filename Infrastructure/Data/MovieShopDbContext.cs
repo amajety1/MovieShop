@@ -59,11 +59,11 @@ public class MovieShopDbContext : DbContext
         modelBuilder.Property(x => x.Character).HasMaxLength(450);
         
         modelBuilder.HasOne(x => x.Movie)
-        .WithMany()
+        .WithMany(m => m.MovieCasts)
         .HasForeignKey(x => x.MovieId);
         
         modelBuilder.HasOne(x => x.Cast)
-        .WithMany()
+        .WithMany(c => c.MovieCasts)
         .HasForeignKey(x => x.CastId);
     }
 }

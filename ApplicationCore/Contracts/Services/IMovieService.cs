@@ -4,5 +4,5 @@ namespace ApplicationCore.Contracts.Services;
 
 public interface IMovieService
 {
-  List<MovieCardModel> GetTop30GrossingMovies();
+  List<MovieCardModel> GetTop20GrossingMovies();
 }

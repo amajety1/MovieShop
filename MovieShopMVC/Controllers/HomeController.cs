@@ -8,7 +8,7 @@ namespace MovieShopMVC.Controllers;
 
 public class HomeController : Controller
 {
-  private IMovieService movieService;
+    private readonly IMovieService movieService;
     public HomeController(IMovieService _movieService)
     {
       movieService =  _movieService;
