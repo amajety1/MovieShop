@@ -38,7 +38,19 @@ public class MovieService:IMovieService
       Tagline = movie.Tagline,
       Budget = movie.Budget,
       Revenue = movie.Revenue,
-      PosterUrl = movie.PosterUrl
+      PosterUrl = movie.PosterUrl,
+      ImdbUrl = movie.ImdbUrl,
+      TmdbUrl = movie.TmdbUrl,
+      BackdropUrl = movie.BackdropUrl,
+      OriginalLanguage = movie.OriginalLanguage,
+      ReleaseDate = movie.ReleaseDate,
+      RunTime = movie.RunTime,
+      Price = movie.Price,
+      CreatedDate = movie.CreatedDate,
+      UpdatedDate = movie.UpdatedDate,
+      UpdatedBy = movie.UpdatedBy,
+      CreatedBy = movie.CreatedBy
+
     };
     return movieDetailsModel;
     }
