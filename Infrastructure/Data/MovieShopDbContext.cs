@@ -33,8 +33,9 @@ public class MovieShopDbContext : DbContext
         // fluent api
         builder.ToTable("Movies");
         builder.HasKey(e => e.Id);
+        builder.Property(e => e.Id).UseIdentityColumn(1, 1); // Start from 1 and increment by 1
         builder.Property(e => e.Title).HasColumnType("varchar(500)");
-        builder.Property(e => e.Overview).HasColumnType("varchar(512)");
+        builder.Property(e => e.Overview).HasColumnType("varchar(2084)");
 
    
 
