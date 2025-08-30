@@ -19,7 +19,7 @@ public class MoviesController:Controller
   
   public ActionResult TopRated()
   {
-    var movies = _movieService.GetTop30GrossingMovies();
+    var movies = _movieService.GetTop20GrossingMovies();
     return View(movies);
   }
 }

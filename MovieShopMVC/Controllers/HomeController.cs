@@ -17,7 +17,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-      var movies = movieService.GetTop30GrossingMovies();
+      var movies = movieService.GetTop20GrossingMovies();
         return View(movies);
     }
 

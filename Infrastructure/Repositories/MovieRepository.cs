@@ -2,6 +2,7 @@ using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Entities;
 using System.Collections.Generic;
 using System;
+using Infrastructure.Data;
 
 
 namespace Infrastructure.Repositories;
