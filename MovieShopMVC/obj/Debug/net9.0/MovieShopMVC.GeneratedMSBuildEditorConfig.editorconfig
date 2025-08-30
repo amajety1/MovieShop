@@ -28,6 +28,42 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Cast/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FzdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Cast/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FzdC9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Cast/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FzdC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Cast/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FzdC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Cast/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FzdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Cast/Movies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FzdC9Nb3ZpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +98,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Qcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/aniketmajety/RiderProjects/MovieShop/MovieShopMVC/Views/_ViewImports.cshtml]

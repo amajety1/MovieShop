@@ -29,7 +29,7 @@ public class MovieService:IMovieService
   
   public MovieDetailsModel GetMovieDetails(int id)
   {
-    var movie = _movieRepository.GetById(id);
+    var movie = _movieRepository.GetMovieWithCasts(id);
     if(movie != null){
     var movieDetailsModel = new MovieDetailsModel(){
       Id = movie.Id,
@@ -50,8 +50,23 @@ public class MovieService:IMovieService
       UpdatedDate = movie.UpdatedDate,
       UpdatedBy = movie.UpdatedBy,
       CreatedBy = movie.CreatedBy
-
     };
+    
+    // Add cast information
+    if (movie.MovieCasts != null && movie.MovieCasts.Any())
+    {
+      foreach (var movieCast in movie.MovieCasts)
+      {
+        movieDetailsModel.Casts.Add(new CastModel
+        {
+          Id = movieCast.Cast.Id,
+          Name = movieCast.Cast.Name,
+          Character = movieCast.Character,
+          ProfilePath = movieCast.Cast.ProfilePath
+        });
+      }
+    }
+    
     return movieDetailsModel;
     }
     return null;

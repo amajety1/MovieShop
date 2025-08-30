@@ -72,5 +72,6 @@ public class MovieDetailsModel
     [Display(Name = "Created By")]
     public string? CreatedBy { get; set; }
     
+    public List<CastModel> Casts { get; set; } = new List<CastModel>();
 }
     

@@ -1,0 +1,141 @@
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container-fluid mt-4">
+    <h1 class="mb-4">Admin Dashboard</h1>
+    
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="card bg-primary text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Total Movies</h5>
+                    <h2 class="card-text">1,245</h2>
+                    <a asp-action="Movies" class="text-white">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Total Users</h5>
+                    <h2 class="card-text">8,732</h2>
+                    <a asp-action="Users" class="text-white">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Total Purchases</h5>
+                    <h2 class="card-text">12,456</h2>
+                    <a asp-action="PurchaseReport" class="text-white">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+            <div class="card bg-warning text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Revenue</h5>
+                    <h2 class="card-text">$124,567</h2>
+                    <a asp-action="Reports" class="text-white">View Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-8 mb-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Recent Purchases</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Movie</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>Inception</td>
+                                <td>$14.99</td>
+                                <td>2025-08-28</td>
+                            </tr>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>The Dark Knight</td>
+                                <td>$12.99</td>
+                                <td>2025-08-28</td>
+                            </tr>
+                            <tr>
+                                <td>Robert Johnson</td>
+                                <td>Interstellar</td>
+                                <td>$15.99</td>
+                                <td>2025-08-27</td>
+                            </tr>
+                            <tr>
+                                <td>Emily Davis</td>
+                                <td>The Matrix</td>
+                                <td>$9.99</td>
+                                <td>2025-08-27</td>
+                            </tr>
+                            <tr>
+                                <td>Michael Wilson</td>
+                                <td>Pulp Fiction</td>
+                                <td>$11.99</td>
+                                <td>2025-08-26</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer">
+                    <a asp-action="PurchaseReport" class="btn btn-primary">View All Purchases</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Top Movies</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Inception
+                            <span class="badge bg-primary rounded-pill">245 purchases</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            The Dark Knight
+                            <span class="badge bg-primary rounded-pill">198 purchases</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Interstellar
+                            <span class="badge bg-primary rounded-pill">176 purchases</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            The Matrix
+                            <span class="badge bg-primary rounded-pill">154 purchases</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Pulp Fiction
+                            <span class="badge bg-primary rounded-pill">132 purchases</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <a asp-action="Movies" class="btn btn-primary">View All Movies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

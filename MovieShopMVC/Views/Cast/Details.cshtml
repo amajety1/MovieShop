@@ -1,0 +1,41 @@
+@model ApplicationCore.Models.CastModel
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                @if (!string.IsNullOrEmpty(Model.ProfilePath))
+                {
+                    <img src="@Model.ProfilePath" alt="@Model.Name" class="card-img-top">
+                }
+                else
+                {
+                    <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 300px;">
+                        <span class="text-muted">No Image Available</span>
+                    </div>
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name</h5>
+                    @if (!string.IsNullOrEmpty(Model.Character))
+                    {
+                        <p class="card-text text-muted">Known for: @Model.Character</p>
+                    }
+                </div>
+            </div>
+            
+            <div class="mt-3">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+                <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+                <a asp-action="Movies" asp-route-id="@Model.Id" class="btn btn-info">View Movies</a>
+            </div>
+        </div>
+        
+        <div class="col-md-8">
+            <h2>@Model.Name</h2>
+            <hr />
+            
+            <!-- Additional cast details can be added here -->
+            
+        </div>
+    </div>
+</div>

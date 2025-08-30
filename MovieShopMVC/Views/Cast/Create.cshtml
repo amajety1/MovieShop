@@ -1,0 +1,87 @@
+@model ApplicationCore.Models.CastModel
+
+@{
+    ViewData["Title"] = "Create Cast";
+}
+
+<div class="container mt-4">
+    <h2>Create New Cast Member</h2>
+    <hr />
+    
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Create" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Name</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="Gender" class="form-label">Gender</label>
+                    <select asp-for="Gender" class="form-select">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="TmdbUrl" class="form-label">TMDB URL</label>
+                    <input asp-for="TmdbUrl" class="form-control" />
+                    <span asp-validation-for="TmdbUrl" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="ProfilePath" class="form-label">Profile Image URL</label>
+                    <input asp-for="ProfilePath" class="form-control" />
+                    <span asp-validation-for="ProfilePath" class="text-danger"></span>
+                    <small class="form-text text-muted">Enter a URL to the cast member's profile image</small>
+                </div>
+                
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                </div>
+            </form>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Preview</h5>
+                </div>
+                <div class="card-body text-center">
+                    <div id="profilePreview" class="mb-3">
+                        <img src="https://via.placeholder.com/300x450" alt="Profile Preview" class="img-fluid" />
+                    </div>
+                    <h5 id="namePreview">Cast Name</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Simple preview functionality
+        $(document).ready(function() {
+            $("#Name").on("input", function() {
+                $("#namePreview").text($(this).val() || "Cast Name");
+            });
+            
+            $("#ProfilePath").on("input", function() {
+                const url = $(this).val();
+                if (url) {
+                    $("#profilePreview img").attr("src", url);
+                } else {
+                    $("#profilePreview img").attr("src", "https://via.placeholder.com/300x450");
+                }
+            });
+        });
+    </script>
+}
